@@ -1,0 +1,30 @@
+{
+  "name": "node-backend",
+  "version": "1.0.0",
+  "description": "Backend Node + Express + TypeScript + Swagger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ger714/nodejs.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "typescript",
+    "swagger",
+    "mongoose"
+  ],
+  "author": "@ger714",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ger714/nodejs/issues"
+  },
+  "homepage": "https://github.com/ger714/nodejs#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}
