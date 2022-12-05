@@ -6,6 +6,11 @@ export type BasicResponse = {
     message: string
 }
 
+export type CloseResponse = {
+    message: string,
+    date: Date
+}
+
 /**
  * Error JSON response for controllers
  */
