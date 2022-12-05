@@ -18,3 +18,9 @@ webpack: Webpack is a tool we can use to bundle all our JavaScript code into a s
   
   "environment variable":
     - PORT
+    
+   ## Security:
+   
+   Dependencies:
+    - Cors
+    - Helmet
