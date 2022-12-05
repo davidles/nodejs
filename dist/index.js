@@ -16,7 +16,20 @@ app.get('/', (req, res) => {
     res.send("Welcome to APP Express + TS + Swagger + Mongoose + Node js + Jest");
 });
 app.get('/hello', (req, res) => {
-    res.send("Hello world");
+    const name = req.query.name;
+    res.json({
+        "data": {
+            "message": name ? `Hello ${name}` : "Hello Anonimus"
+        }
+    });
+});
+app.get('/bye', (req, res) => {
+    res.status(200);
+    res.json({
+        "data": {
+            "message": "Goodbye, world"
+        }
+    });
 });
 app.listen(port, () => {
     console.log(`Listen port: ${port}`);

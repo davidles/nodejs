@@ -1,4 +1,4 @@
-import express, { Express, Request, Response } from "express";
+import express, { Express, Request, Response } from 'express';
 import dotenv from 'dotenv';
 
 // Configuration the .env file
@@ -16,8 +16,23 @@ app.get('/', (req: Request, res: Response) =>{
 });
 
 app.get('/hello', (req: Request, res: Response) =>{
-    res.send("Hello world");
+    const name = req.query.name;
+
+    res.json({
+        "data": {
+            "message": name ? `Hello ${name}`: "Hello Anonimus"
+        }
+    })
 });
+
+app.get('/bye', (req: Request, res: Response) =>{
+    res.status(200);
+    res.json({
+        "data": {
+            "message": "Goodbye, world"
+        }
+    })
+})
 
 app.listen( port, () =>{
     console.log(`Listen port: ${port}`);
