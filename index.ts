@@ -6,14 +6,21 @@ dotenv.config();
 
 // Create Express APP
 const app: Express = express();
-const port: string | number = process.env.PORT || 8000;
+// const port: string | number = process.env.PORT=> Error
+const port: string | number = 8000;
+
 
 // Define the first Route of APP
 app.get('/', (req: Request, res: Response) =>{
-    res.send("Welcome to APP Express + TS + Swagger + Mongoose")
+    res.send("Welcome to APP Express + TS + Swagger + Mongoose + Node js + Jest")
 });
 
-// Execute APP and Listen Requests to PORT
-app.listen(port, () =>{
-    console.log(`Express Server: Running at http://localhost:${port}`)
+app.get('/hello', (req: Request, res: Response) =>{
+    res.send("Hello world");
+});
+
+app.listen( port, () =>{
+    console.log(`Listen port: ${port}`);
 })
+
+
