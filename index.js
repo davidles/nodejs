@@ -6,7 +6,7 @@ dotenv.config();
 
 // Create Express APP
 const app = express();
-const port = process.env.PORT || 8000;
+const port = 8443;
 
 // Define the first Route of APP
 app.get('/', (req, res) =>{
