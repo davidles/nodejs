@@ -1,6 +1,6 @@
 import express, { Request, Response } from "express";
-import { HelloController } from "@/controller/HelloControler";
-import { LogInfo } from "@/utils/logger";
+import { HelloController } from "../controller/HelloControler";
+import { LogInfo } from "../utils/logger";
  
 // Router from Express
 let helloRouter = express.Router();
@@ -11,7 +11,7 @@ helloRouter.route('/')
         // GET: http://localhost:8000/api/hello?name=David/
 
         //Obtein query param
-        const name: any = req?.query.name;
+        const name: any = req?.query?.name;
         LogInfo(`Query Param: ${name}`);
 
         // Controller Instance to excute method
