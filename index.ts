@@ -15,15 +15,15 @@ app.get('/', (req: Request, res: Response) =>{
     res.send("Welcome to APP Express + TS + Swagger + Mongoose + Node js + Jest")
 });
 
-app.get('/hello', (req: Request, res: Response) =>{
-    const name = req.query.name;
+// app.get('/hello', (req: Request, res: Response) =>{
+//     const name = req.query.name;
 
-    res.json({
-        "data": {
-            "message": name ? `Hello ${name}`: "Hello Anonimus"
-        }
-    })
-});
+//     res.json({
+//         "data": {
+//             "message": name ? `Hello ${name}`: "Hello Anonimus"
+//         }
+//     })
+// });
 
 app.get('/bye', (req: Request, res: Response) =>{
     res.status(200);
