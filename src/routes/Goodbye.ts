@@ -1,5 +1,6 @@
 import { GoodByeController } from "../controller/GoodByeController";
 import express, { Express, Request, Response } from "express";
+import { CloseResponse } from "@/controller/types";
 
 const goodbye = express();
 
@@ -12,7 +13,7 @@ goodbye.route('/')
         const controller: GoodByeController = new GoodByeController();
 
         //Obtain response
-        const response = await controller.getMessage(name);
+        const response: CloseResponse = await controller.getMessage(name);
 
         // Send to the clent response
         res.json(response)
