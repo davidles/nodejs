@@ -1,0 +1,29 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "code-verifier-backend",
+		"version": "1.0.0",
+		"description": "Backend Node + Express + TS + Swagger",
+		"license": {
+			"name": "ISC"
+		},
+		"contact": {
+			"name": "@masajo"
+		}
+	},
+	"openapi": "3.0.0",
+	"paths": {},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}
