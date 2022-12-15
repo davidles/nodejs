@@ -4,7 +4,6 @@
   "description": "Backend Node + Express + TS + Swagger",
   "main": "index.js",
   "scripts": {
-    "prueba:webpack": "npx webpack",
     "swagger": "tsoa spec",
     "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"",
     "test": "jest",
@@ -40,8 +39,8 @@
     "helmet": "^5.0.2",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.10",
-    "swagger-jsdoc": "^6.2.0",
-    "swagger-ui-express": "^4.3.0",
+    "swagger-jsdoc": "^6.2.5",
+    "swagger-ui-express": "^4.6.0",
     "tsoa": "^3.14.1"
   },
   "devDependencies": {
